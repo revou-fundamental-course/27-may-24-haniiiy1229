@@ -50,7 +50,7 @@ table {
 /*CSS Reset*/
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -111,6 +111,7 @@ main {
 
 #welcome h1 {
     margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .banner {
@@ -264,6 +265,23 @@ main {
 button {
 	display: flex;
 	justify-content: center;
+	width: 80%;
+}
+
+#message-us,
+#form-result-section {
+    width: calc(50% - 10px);
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #message-us,
+    #form-result-section {
+        width: 100%;
+    }
 }
 
 footer {
